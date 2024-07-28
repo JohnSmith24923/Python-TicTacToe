@@ -44,6 +44,9 @@ def create_window():
             row_buttons.append(button)
         buttons.append(row_buttons)
     
+    reset_button = tk.Button(window, text="Restart", command=reset_board)
+    reset_button.grid(row=3, columnspan=3)
+
     window.mainloop()
 
 if __name__ == "__main__":
